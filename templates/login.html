@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body style=" background-image: linear-gradient(to right, lightblue , #29bbcf); width: 360px;
+  padding: 8% 0 0;
+  margin: auto; ">
+<div class="container">
+<form action="login" method="post" style="text-align:center;position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 100px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Username" style="font-family: Roboto; sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;" > </br>
+    <input type="password" name="password" placeholder="Password" style="font-family: Roboto; sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;"> </br>
+    <input type="submit" name="login" value="Login">
+
+
+</form>
+<div><h3><a href="accounts/register"> Register Now </a></h3></div>
+
+</div>
+</body>
+</html>

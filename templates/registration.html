@@ -1,0 +1,52 @@
+
+{% load static %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/reg.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+
+<!--    <style>-->
+<!--        body{-->
+<!--    background-image: linear-gradient(to right, lightblue , #29bbcf);-->
+<!--    width: 360px;-->
+<!--}-->
+
+<!--h1{-->
+<!-- background-color:red;-->
+<!--}-->
+
+<!--.form{-->
+<!--    size:250px;-->
+<!--}-->
+<!--    </style>-->
+</head>
+<body>
+
+<form class="form" action="register" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="username"><br>
+    <input type="text" name="first_name" placeholder="firstname"><br>
+    <input type="text" name="last_name" placeholder="lastname"><br>
+    <input type="email" name="email" placeholder="email"><br>
+    <input type="password" name="password1" placeholder="password1"><br>
+    <input type="password" name="password2" placeholder="password2"><br>
+    <input type="submit" value="registration"><br>
+
+</form>
+<div>
+    {% for message in messages %}
+    <h5>{{message}}</h5>
+    {% endfor %}
+</div>
+</body>
+</html>
