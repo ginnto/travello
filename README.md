@@ -11,3 +11,23 @@ Built using Python-django, HTML, CSS, JavaScript, and PostgreSQL (Database).
 ![page4](https://user-images.githubusercontent.com/92264484/185749199-f3bc6229-6b4a-47fa-bf4a-6b2879f3712d.JPG)
 ![page5](https://user-images.githubusercontent.com/92264484/185749200-29e038ae-2224-4d4e-8b1d-716838f3aeaf.JPG)
 ![page6](https://user-images.githubusercontent.com/92264484/185749204-618478a6-3d37-4dbe-b296-9ff336c1a11c.JPG)
+
+# Installation
+
+pip install django
+virtualenv env
+
+# For Mac/ Linux
+
+source env/bin/activate
+
+# For Window
+`env\scripts\activate`
+
+`pip install -r requirements.txt`
+
+`python manage.py makemigrations`
+
+`python manage.py migrate`
+
+`python manage.py runserver`
