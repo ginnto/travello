@@ -15,6 +15,7 @@ Built using Python-django, HTML, CSS, JavaScript, and PostgreSQL (Database).
 # Installation
 
 pip install django
+
 virtualenv env
 
 # For Mac/ Linux
